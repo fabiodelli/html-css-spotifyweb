@@ -4,15 +4,32 @@
  box-sizing:border-box;
 }
 
+:root{
+    --top:#080b12;
+    --main:#141922;
+    --side_bar:#000000;
+    --bottom:#282828;
+}
+
 .top{
-    height: 100px;
+    height: 70px;
+    background: #080b12;
 }
+
 .main{
-
+    height: calc(100vh - 140px);
+    background: #141922;
 }
-.side_bar{
 
+.side_bar{
+    width: 15%;
+    height: 100%;
+    background: #000000;
+    position: absolute;
+    top: 0;
 }
 .bottom{
+    height: 70px;
+    background:#282828;
 
 }
