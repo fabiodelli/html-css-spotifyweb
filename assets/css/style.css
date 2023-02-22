@@ -50,7 +50,7 @@
     width:100%;
     background: #141922;
 }
-.nav{
+.call_to_action_band{
     width: 100%;
     background: #080b12;
     padding: 1rem;
@@ -58,7 +58,7 @@
     justify-content: flex-end;
 }
 
-.btn_upgrade{
+.btn_call_to_action{
     border: 1px solid white;
     border-radius: 50px;
     padding: 0.5rem 2rem;
