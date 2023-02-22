@@ -12,23 +12,26 @@
 }
 
 .top{
-    height: 70px;
-    background: #080b12;
-}
-
-.main{
-    height: calc(100vh - 140px);
-    background: #141922;
+    height: calc(100vh - 70px);
+    display: flex;  
 }
 
 .side_bar{
-    width: 15%;
-    height: 100%;
-    background: #000000;
-    position: absolute;
-    top: 0;
+    width: 150px;
+    background: #000000; 
 }
+
+.main{
+    height:100%;
+    background: #141922;
+}
+
 .bottom{
     height: 70px;
     background:#282828;
+}
+
+.nav{
+    width: 100%;
+    background: #080b12;
 }
