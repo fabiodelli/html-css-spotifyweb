@@ -13,6 +13,7 @@
     --main:#141922;
     --side_bar:#000000;
     --bottom:#282828;
+    --text_gray:rgb(150, 150, 150);
 }
 
 body{
@@ -37,7 +38,11 @@ a{
     padding-bottom: 1rem;
 }
 
-.m_r {
+.m_05rem {
+    margin: 0.5rem;
+}
+
+.m_right_05rem {
     margin-right: 0.5rem;
 }
 
@@ -77,6 +82,10 @@ a{
     color: white;
 }
 
+.text_gray {
+    color: rgb(165, 165, 165);
+}
+
 .bg_gray {
     color: rgb(150, 150, 150);
 }
@@ -108,10 +117,11 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
 }
 
 .side_bar_up{
-    text-align: center;
+    
 }
 
 .logo{
@@ -121,6 +131,20 @@ a{
 
 .ext_logo{
     display: none;
+}
+
+.side_bar_center{
+    display: none;
+    margin: 0.5rem;
+}
+
+.playlist_name{
+    color:var(--text_gray);
+    margin: 0.5rem;
+}
+
+.playlist_name:hover{
+    color: white;
 }
 
 .side_bar_down{
@@ -183,7 +207,7 @@ main{
 }
 
 .nav_link{
-    padding: 0.3rem;
+    padding: 0.3rem 0.5rem;
     display: flex;
     align-items: center;
 }
@@ -315,7 +339,7 @@ main{
 
 /* #region media*/
 
-@media screen and (min-width:768px){
+@media screen and (min-width:481px){
     .side_bar{
         width: 150px;
         align-items: flex-start;
@@ -349,13 +373,23 @@ main{
     .side_bar_text{
         display: inline-block;
     }
+    .side_bar_center{
+        display: inline-block;
+        
+    }
 }
-@media screen and (min-width:1140px){
-    
+
+@media screen and (min-width:787px){
+    .card{
+        width:25%;
+    }
 }
-@media screen and (min-width:1440px){
-    
+@media screen and (min-width:1141px){
+    .card{
+        width:calc(100%/6);
+    }
 }
+
 
 /* #endregion media*/
 
