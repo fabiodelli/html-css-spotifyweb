@@ -114,6 +114,15 @@ a{
     text-align: center;
 }
 
+.logo{
+    width: 50%;
+    margin: 0.5rem;
+}
+
+.ext_logo{
+    display: none;
+}
+
 .side_bar_down{
     text-align: center;
 }
@@ -123,12 +132,16 @@ a{
    justify-content: center;
 }
 
-.sidebar_toggle_up{
+.side_bar_toggle_up{
     width: 50%;
     margin: 0.5rem;
 }
 
-.sidebar_toggle_down{
+.side_bar_text{
+    display: none;
+}
+
+.side_bar_toggle_down{
     width: 50%;
     margin: 0.5rem;
 }
@@ -308,12 +321,33 @@ main{
         align-items: flex-start;
     }
 
-    .sidebar_toggle_up{
-        width: 1.2rem;
+    .side_bar a{
+        justify-content: flex-start;
+        align-items: center;
     }
 
-    .sidebar_toggle_down{
+    .side_bar_toggle_up{
         width: 1.2rem;
+        align-items:flex-start ;
+    }
+
+    .side_bar_toggle_down{
+        width: 1.2rem;
+        align-items:flex-start ;
+    }
+
+    .ext_logo{
+        display:inline-block;
+        width: 100px;
+        margin: 0.5rem;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .side_bar_text{
+        display: inline-block;
     }
 }
 @media screen and (min-width:1140px){
