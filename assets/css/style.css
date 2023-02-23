@@ -179,9 +179,17 @@ a{
 
 .content{
    height:80%;
-   overflow-y: scroll;
-   display: flex;
-   flex-wrap: wrap; 
+   overflow-y: scroll; 
+}
+
+.title_row{
+    padding: 1rem;
+    font-size: 20px;
+}
+
+.row{
+    display: flex;
+   flex-wrap: wrap;
 }
 
 .card{
@@ -235,7 +243,7 @@ a{
 }
 
 .div_heart{
-    margin-left: 3%;
+    margin-left: 8%;
 }
 
 .bottom_left{
