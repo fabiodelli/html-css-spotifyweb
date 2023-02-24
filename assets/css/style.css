@@ -28,6 +28,12 @@ a{
     text-decoration: none;
 }
 
+hr{
+    margin:0 1.2rem;
+    display: none;
+}
+
+
 /* #region Utility*/
 
 .p_1rem {
@@ -380,6 +386,11 @@ main{
     .side_bar_center{
         display: inline-block;
         
+    }
+
+    hr{
+        display: inline-block;
+        width: 100%;
     }
 }
 
