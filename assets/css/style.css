@@ -51,6 +51,9 @@ hr{
 .m_right_05rem {
     margin-right: 0.5rem;
 }
+.m_left_05rem {
+    margin-left: 0.5rem;
+}
 
 .m_b_05rem {
     margin-bottom: 0.5rem;
@@ -123,7 +126,6 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 .side_bar_up{
@@ -146,10 +148,19 @@ hr{
 
 .playlist_name{
     color:var(--text_gray);
-    margin: 0.5rem;
+    margin: 1rem 0.5rem;
 }
 
 .playlist_name:hover{
+    color: white;
+}
+
+.add_playlist{
+    display: flex;
+    color: white;
+}
+
+.add_playlist span:hover{
     color: white;
 }
 
@@ -269,7 +280,6 @@ main{
 
 /* #endregion content*/
 
-
 /* #endregion Main*/
 
 /* #region Bottom*/
@@ -305,7 +315,7 @@ main{
 }
 
 .player_up{
-    width: 100%;
+    width: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -385,7 +395,10 @@ main{
     }
     .side_bar_center{
         display: inline-block;
-        
+    }
+
+    .new_playlist{
+
     }
 
     hr{
