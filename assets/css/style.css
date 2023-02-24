@@ -383,13 +383,32 @@
      width: 90%;
      align-items: center;
      gap: 10px;
+     position: relative;
  }
 
  .time_bar {
      width: 100%;
      height: 4px;
-     background: white;
+     background: var(--text_gray);
      border-radius: 50px;
+ }
+
+ .flow_time{
+    width: 30%;
+    background-color: white;
+    height: 4px;
+    border-radius: 50px;
+    position: absolute;
+    left: 30px;
+ }
+
+ .indicator{
+    width: 12px;
+    aspect-ratio: 1/1;
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    left: 50%;
  }
 
  .bottom_right {
@@ -403,7 +422,7 @@
  .volume_bar {
      width: 30%;
      height: 4px;
-     background: white;
+     background: var(--text_gray);
      border-radius: 50px;
  }
 
@@ -468,8 +487,6 @@
      .player_up{
         width: 150px;
      }
-
-
  }
 
  @media screen and (min-width:787px) {
@@ -480,11 +497,18 @@
      .player_up{
         width: 200px;
      }
+
+     .indicator{
+        left: 38%;
+     }
  }
 
  @media screen and (min-width:1141px) {
      .card {
          width: calc(100%/6);
+     }
+     .indicator{
+        left: 36%;
      }
  }
 
