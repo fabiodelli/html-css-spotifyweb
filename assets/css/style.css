@@ -393,6 +393,10 @@
      border-radius: 50px;
  }
 
+ .time_bar:hover{
+    cursor: pointer;
+ }
+
  .flow_time{
     width: 30%;
     background-color: white;
@@ -400,6 +404,10 @@
     border-radius: 50px;
     position: absolute;
     left: 30px;
+ }
+
+ .flow_time:hover{
+    cursor: pointer;
  }
 
  .indicator{
@@ -410,6 +418,14 @@
     position: absolute;
     left: 50%;
  }
+
+ .indicator:hover{
+    cursor: pointer;
+}
+
+.flow_time:hover{
+    background-color: greenyellow;
+}
 
  .bottom_right {
      display: flex;
@@ -424,6 +440,15 @@
      height: 4px;
      background: var(--text_gray);
      border-radius: 50px;
+ }
+
+ .indicator_right{
+    width: 12px;
+    aspect-ratio: 1/1;
+    background-color: white;
+    border-radius: 50px;
+    position: absolute;
+    top: 28px;
  }
 
  /* #endregion Bottom*/
