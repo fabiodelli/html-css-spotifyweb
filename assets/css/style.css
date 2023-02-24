@@ -399,7 +399,7 @@
 
  .flow_time{
     width: 30%;
-    background-color: white;
+    background-color: greenyellow;
     height: 4px;
     border-radius: 50px;
     position: absolute;
@@ -421,10 +421,6 @@
 
  .indicator:hover{
     cursor: pointer;
-}
-
-.flow_time:hover{
-    background-color: greenyellow;
 }
 
  .bottom_right {
@@ -449,6 +445,10 @@
     border-radius: 50px;
     position: absolute;
     top: 28px;
+ }
+
+ .indicator_right:hover{
+    cursor: pointer;
  }
 
  /* #endregion Bottom*/
