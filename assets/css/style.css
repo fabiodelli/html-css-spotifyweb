@@ -189,7 +189,6 @@
  .user_img{
     background: gray;
     border-radius: 50%;
-    
  }
 
  .side_bar a {
@@ -333,6 +332,10 @@
      margin-top: 1rem;
  }
 
+ .description>div{
+    color: gray;
+ }
+
  /* #endregion content*/
 
  /* #endregion Main*/
@@ -401,7 +404,7 @@
 
  .flow_time{
     width: 30%;
-    background-color: greenyellow;
+    background-color: white;
     height: 4px;
     border-radius: 50px;
     position: absolute;
@@ -418,11 +421,18 @@
     background-color: white;
     border-radius: 50px;
     position: absolute;
-    left: 50%;
+    left:95%;
+    top: -4px;
+    display: none;
  }
 
- .indicator:hover{
+ .player_down:hover .indicator{
     cursor: pointer;
+    display: inline-block;
+}
+ .player_down:hover .flow_time{
+    cursor: pointer;
+    background-color: greenyellow;
 }
 
  .bottom_right {
@@ -529,17 +539,11 @@
         width: 200px;
      }
 
-     .indicator{
-        left: 38%;
-     }
  }
 
  @media screen and (min-width:1141px) {
      .card {
          width: calc(100%/6);
-     }
-     .indicator{
-        left: 36%;
      }
  }
 
