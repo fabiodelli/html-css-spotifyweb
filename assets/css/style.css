@@ -36,15 +36,6 @@
 
  /* #region Utility*/
 
- .d_f_col{
-    display: flex;
-    flex-direction: column;
- }
-
- .p_rel{
-    position: relative;
- }
-
  .p_1rem {
      padding: 1rem;
  }
@@ -192,7 +183,13 @@
  }
 
  .side_bar_down {
-     text-align: center;
+     display: flex;
+ }
+
+ .user_img{
+    background: gray;
+    border-radius: 50%;
+    
  }
 
  .side_bar a {
@@ -227,7 +224,7 @@
 
  /* #region Call to action*/
  .call_to_action_band {
-     height: 10%;
+     height: 50px;
      width: 100%;
      background: #080b12;
      padding: 1rem;
@@ -255,11 +252,12 @@
  /* #endregion Call to action*/
  /* #region nav main*/
  .nav_main {
-     height: 10%;
+     height: 40px;
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
-     align-items: center;
+     align-items:baseline;
+     margin-top: 1rem;
  }
 
  .nav_link {
@@ -268,16 +266,19 @@
      align-items: center;
  }
 
+ .nav_link_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+ }
+
  .nav_green_bar {
      background-color: greenyellow;
      height: 0.2rem;
      width: 30px;
      border-radius: 2.5px;
      margin-top: 0.3rem;
-     position: absolute;
-     justify-content: center;
-     top: 20px;
-     left: 24px;
      
  }
 
@@ -285,7 +286,7 @@
  /* #region content*/
 
  .content {
-     height: 80%;
+     height: calc(100% - 90px);
      overflow-y: scroll;
  }
 
@@ -324,11 +325,12 @@
      display: flex;
      justify-content: center;
      align-items: center;
-     background: rgba(0, 0, 0, 0.5);
+     background: rgba(0, 0, 0, 0.4);
  }
 
  .description {
      text-align: center;
+     margin-top: 1rem;
  }
 
  /* #endregion content*/
@@ -496,7 +498,7 @@
 
      hr {
          display: inline-block;
-         width: 99%;
+         width: 90px;
      }
 
      .left_green_bar {
@@ -511,6 +513,10 @@
 
      .player_up{
         width: 150px;
+     }
+
+     .text_gray:hover{
+        color: white;
      }
  }
 
