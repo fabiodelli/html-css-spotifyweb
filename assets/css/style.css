@@ -449,19 +449,33 @@
      background: var(--text_gray);
      border-radius: 50px;
  }
-
+ .current_volume{
+    width: 30%;
+    height: 4px;
+    background: white;
+    border-radius: 50px;
+    position: relative;
+ }
+ .volume_bar:hover .current_volume{
+    background-color: greenyellow;
+ }
+ 
  .indicator_right{
     width: 12px;
     aspect-ratio: 1/1;
     background-color: white;
     border-radius: 50px;
     position: absolute;
-    top: 28px;
+    left: 90%;
+    top: -4px;
+    display: none;
  }
 
- .indicator_right:hover{
+ .volume_bar:hover .indicator_right{
     cursor: pointer;
+    display: inline-block;
  }
+ 
 
  /* #endregion Bottom*/
 
