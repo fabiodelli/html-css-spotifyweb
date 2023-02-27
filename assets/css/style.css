@@ -138,7 +138,6 @@
      display: flex;
      flex-direction: column;
      justify-content: space-between;
-     overflow: hidden;
  }
 
  .logo {
@@ -251,12 +250,12 @@
  /* #endregion Call to action*/
  /* #region nav main*/
  .nav_main {
-     height: 40px;
+     height: 50px;
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
      align-items:baseline;
-     margin-top: 1rem;
+     margin-top: 0.7rem;
  }
 
  .nav_link {
@@ -277,7 +276,6 @@
      height: 0.2rem;
      width: 30px;
      border-radius: 2.5px;
-     margin-top: 0.3rem;
      
  }
 
